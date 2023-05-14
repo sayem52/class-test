@@ -1,4 +1,8 @@
 .about{
     border: 1px solid tomato;
     margin: 30px;
+    display: flex;
+}
+.header-title{
+    padding: 5px;
 }

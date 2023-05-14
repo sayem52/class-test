@@ -1,4 +1,23 @@
 .container{
-    display: flex;
+   display: flex;
+   padding-top: 15px;
+   background-color: rgb(159, 161, 161);
+
     
+}
+.headC{
+    margin-left: 20px;
+    color: blue;
+}
+.navB{
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+.navB:hover{
+    color: rgb(6, 119, 12);
+    text-decoration: underline;
+}
+.cn{
+    margin-left: 500px;
 }

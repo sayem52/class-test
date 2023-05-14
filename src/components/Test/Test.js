@@ -1,18 +1,36 @@
 import React from 'react';
-import './Test.css';
+import {  useNavigate } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+import '../../components/Test/Test.css'
 
-const Test = ({test}) => {
-     const {id,name,logo}=test;
+
+const Test = ({sub}) => {
+      const {id,name,logo} =sub;
+      const navigate = useNavigate();
+      const handleNavigate=()=>{
+        navigate(`/sub/${id}`);
+      }
     return (
          <div>
-    
-            
-            <div className='test'>
-                <img src={logo} alt="" />
-                <h2>name: {name}</h2>
-            
+             
+             <CardGroup className='mar'>
+                <Card >
+                    <Card.Img className="img-s" variant="top" src={logo} />
+                    <Card.Body>
+                    <Card.Title>Name:{name}</Card.Title>
+                       <button onClick={handleNavigate}> Start Practice </button> 
+                    </Card.Body>
+                    
+                      
+                    
+                </Card>
+                
+            </CardGroup>
+             
+
         
-            </div>
+            
          </div>
         
     );
